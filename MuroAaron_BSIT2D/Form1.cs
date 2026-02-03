@@ -59,5 +59,10 @@ namespace MuroAaron_BSIT2D
                 MessageBox.Show("Welcome " + tbUsername.Text);
             }
         }
+
+        private void tbUsername_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

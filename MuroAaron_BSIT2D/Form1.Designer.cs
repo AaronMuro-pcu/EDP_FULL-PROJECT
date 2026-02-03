@@ -50,11 +50,12 @@
             // 
             // tbUsername
             // 
-            this.tbUsername.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.tbUsername.BackColor = System.Drawing.Color.Teal;
             this.tbUsername.Location = new System.Drawing.Point(335, 173);
             this.tbUsername.Name = "tbUsername";
             this.tbUsername.Size = new System.Drawing.Size(276, 20);
             this.tbUsername.TabIndex = 2;
+            this.tbUsername.TextChanged += new System.EventHandler(this.tbUsername_TextChanged);
             // 
             // Password
             // 
@@ -81,7 +82,7 @@
             // 
             // tbPassword
             // 
-            this.tbPassword.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.tbPassword.BackColor = System.Drawing.Color.Teal;
             this.tbPassword.Location = new System.Drawing.Point(335, 226);
             this.tbPassword.Name = "tbPassword";
             this.tbPassword.PasswordChar = '*';
@@ -91,7 +92,7 @@
             // 
             // btnLogin
             // 
-            this.btnLogin.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.btnLogin.BackColor = System.Drawing.Color.MediumTurquoise;
             this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btnLogin.Font = new System.Drawing.Font("Century Schoolbook", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogin.ForeColor = System.Drawing.SystemColors.ControlText;
