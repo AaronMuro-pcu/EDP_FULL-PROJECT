@@ -52,10 +52,58 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Tform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tform.Designer.cs">
+      <DependentUpon>Tform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Uform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Uform.Designer.cs">
+      <DependentUpon>Uform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vform.Designer.cs">
+      <DependentUpon>Vform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pform.Designer.cs">
+      <DependentUpon>Pform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sform.Designer.cs">
+      <DependentUpon>Sform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rform.Designer.cs">
+      <DependentUpon>Rform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmhome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmhome.Designer.cs">
+      <DependentUpon>frmhome.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmhome.resx">
+      <DependentUpon>frmhome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pform.resx">
+      <DependentUpon>Pform.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -67,6 +115,21 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Rform.resx">
+      <DependentUpon>Rform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sform.resx">
+      <DependentUpon>Sform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tform.resx">
+      <DependentUpon>Tform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Uform.resx">
+      <DependentUpon>Uform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vform.resx">
+      <DependentUpon>Vform.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

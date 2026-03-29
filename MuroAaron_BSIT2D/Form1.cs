@@ -17,31 +17,11 @@ namespace MuroAaron_BSIT2D
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Username_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
+        string[,] userCredentials =
+    {
+        {"admin", "admin","aaron joseph muro " },
+        {"cashier","password","sponge bob" }
+    };
         private void btnLogin_Click(object sender, EventArgs e)
         {
             if (tbUsername.Text == "")
@@ -52,17 +32,34 @@ namespace MuroAaron_BSIT2D
             else if (tbPassword.Text == "")
             {
                 MessageBox.Show("Please enter password", "Validation");
-                tbPassword.Focus(); 
+                tbPassword.Focus();
             }
             else
             {
-                MessageBox.Show("Welcome " + tbUsername.Text);
+                for (int x = 0; x < userCredentials.GetLength(0); x++)
+                {
+                    if (tbUsername.Text == userCredentials[x, 0])
+                    {
+                        if (tbPassword.Text == userCredentials[x, 1])
+                        {
+                            frmhome frm = new frmhome();
+                            MessageBox.Show("Welcome " + userCredentials[x, 2]);
+                            this.Hide();
+                            frm.Show();
+                            break;
+                        }
+                        else
+                        {
+                            MessageBox.Show("Invalid Username/Password");
+                            break;
+                        }
+                    }
+                }
             }
-        }
-
-        private void tbUsername_TextChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }
+                
+            
+       
+
