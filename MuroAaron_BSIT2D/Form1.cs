@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,6 +17,7 @@ namespace MuroAaron_BSIT2D
         {
             InitializeComponent();
         }
+        MyDataBase db = new MyDataBase();
 
         string[,] userCredentials =
     {
@@ -36,30 +38,40 @@ namespace MuroAaron_BSIT2D
             }
             else
             {
-                for (int x = 0; x < userCredentials.GetLength(0); x++)
+                DataTable dt = db.ExecuteReturnQuery("SELECT * from tblLoginCredentials WHERE user_username = @uname and user_password = @pword;",
+                    new MySqlParameter("@uname",tbUsername.Text),
+                    new MySqlParameter("@pword",tbPassword.Text));
+
+                if(dt.Rows.Count == 1)
                 {
-                    if (tbUsername.Text == userCredentials[x, 0])
-                    {
-                        if (tbPassword.Text == userCredentials[x, 1])
-                        {
-                            frmhome frm = new frmhome();
-                            MessageBox.Show("Welcome " + userCredentials[x, 2]);
-                            this.Hide();
-                            frm.Show();
-                            break;
-                        }
-                        else
-                        {
-                            MessageBox.Show("Invalid Username/Password");
-                            break;
-                        }
-                    }
+                    frmhome frm = new frmhome();
+                    this.Hide();
+                    frm.Show();
                 }
+                else
+                {
+                    MessageBox.Show("Invalid Username or Password");
+                }
+
             }
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+           
+            if (db.TestConnection() == true)
+            {
+                MessageBox.Show("Connected to Database");
+            }
+            else
+            {
+                MessageBox.Show("DataBase Connection Failed!");
+            }
+        }
+
+        private void tbUsername_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
-                
-            
-       
-
