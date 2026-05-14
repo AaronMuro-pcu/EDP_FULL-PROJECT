@@ -56,18 +56,18 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmUsers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUsers.Designer.cs">
+      <DependentUpon>frmUsers.cs</DependentUpon>
+    </Compile>
     <Compile Include="MyDataBase.cs" />
     <Compile Include="Tform.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Tform.Designer.cs">
       <DependentUpon>Tform.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Uform.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Uform.Designer.cs">
-      <DependentUpon>Uform.cs</DependentUpon>
     </Compile>
     <Compile Include="Vform.cs">
       <SubType>Form</SubType>
@@ -107,6 +107,9 @@
     <EmbeddedResource Include="frmhome.resx">
       <DependentUpon>frmhome.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmUsers.resx">
+      <DependentUpon>frmUsers.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Pform.resx">
       <DependentUpon>Pform.cs</DependentUpon>
     </EmbeddedResource>
@@ -128,9 +131,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Tform.resx">
       <DependentUpon>Tform.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Uform.resx">
-      <DependentUpon>Uform.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vform.resx">
       <DependentUpon>Vform.cs</DependentUpon>

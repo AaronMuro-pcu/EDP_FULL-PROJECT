@@ -9,9 +9,10 @@ using System.Windows.Forms;
 
 namespace MuroAaron_BSIT2D
 {
-    internal class MyDataBase
+    internal class MyDatabase
     {
-        string connectionString = "Server=localhost;Port=3306;Database='muro_db';Uid='root';Pwd=''";
+        string connectionString = "Server=localhost;Port=3306;Database='muro_db';Uid='root';Pwd='';Allow User Variables=True;AllowBatch=True";
+
 
         public bool TestConnection()
         {
@@ -33,7 +34,7 @@ namespace MuroAaron_BSIT2D
             }
         }
 
-        //execute no return query method. used for queries; INSERT, UPDATE, DELETE
+        //execute no return query method. used for queries: INSERT, UPDATE, DELETE
 
         public int ExecuteNoReturnQuery(string query, params MySqlParameter[] parameters)
         {
@@ -101,7 +102,6 @@ namespace MuroAaron_BSIT2D
                 return dataTable;
             }
         }
-
 
 
     }

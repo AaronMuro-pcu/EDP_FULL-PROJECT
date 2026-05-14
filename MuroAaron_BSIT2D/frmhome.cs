@@ -46,8 +46,9 @@ namespace MuroAaron_BSIT2D
 
         private void button5_Click(object sender, EventArgs e)
         {
-            Uform u = new Uform();
-            u.Show();
+            frmUsers frm = new frmUsers();
+            this.Hide();
+            frm.Show();
 
         }
 
@@ -56,6 +57,17 @@ namespace MuroAaron_BSIT2D
             Tform t = new Tform();
             t.Show();
 
+        }
+
+        private void frmhome_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void frmhome_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Form1 frm = new Form1();
+            frm.Show();
         }
     }
 }

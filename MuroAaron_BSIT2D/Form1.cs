@@ -17,7 +17,7 @@ namespace MuroAaron_BSIT2D
         {
             InitializeComponent();
         }
-        MyDataBase db = new MyDataBase();
+        MyDatabase db = new MyDatabase();
 
         string[,] userCredentials =
     {
@@ -38,7 +38,7 @@ namespace MuroAaron_BSIT2D
             }
             else
             {
-                DataTable dt = db.ExecuteReturnQuery("SELECT * from tblLoginCredentials WHERE user_username = @uname and user_password = @pword;",
+                DataTable dt = db.ExecuteReturnQuery("SELECT * from tblLoginCredentials WHERE user_username = @uname and user_password = @pword and is_active = 1;",
                     new MySqlParameter("@uname",tbUsername.Text),
                     new MySqlParameter("@pword",tbPassword.Text));
 
@@ -70,6 +70,11 @@ namespace MuroAaron_BSIT2D
         }
 
         private void tbUsername_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
         {
 
         }

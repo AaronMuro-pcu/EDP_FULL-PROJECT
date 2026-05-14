@@ -41,18 +41,20 @@
             this.Username.AutoSize = true;
             this.Username.BackColor = System.Drawing.Color.Transparent;
             this.Username.Font = new System.Drawing.Font("Century Schoolbook", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Username.Location = new System.Drawing.Point(206, 167);
+            this.Username.Location = new System.Drawing.Point(275, 206);
+            this.Username.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Username.Name = "Username";
-            this.Username.Size = new System.Drawing.Size(123, 25);
+            this.Username.Size = new System.Drawing.Size(158, 32);
             this.Username.TabIndex = 1;
             this.Username.Text = "Username";
             // 
             // tbUsername
             // 
             this.tbUsername.BackColor = System.Drawing.Color.Teal;
-            this.tbUsername.Location = new System.Drawing.Point(335, 173);
+            this.tbUsername.Location = new System.Drawing.Point(447, 213);
+            this.tbUsername.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tbUsername.Name = "tbUsername";
-            this.tbUsername.Size = new System.Drawing.Size(276, 20);
+            this.tbUsername.Size = new System.Drawing.Size(367, 22);
             this.tbUsername.TabIndex = 2;
             this.tbUsername.TextChanged += new System.EventHandler(this.tbUsername_TextChanged);
             // 
@@ -61,9 +63,10 @@
             this.Password.AutoSize = true;
             this.Password.BackColor = System.Drawing.Color.Transparent;
             this.Password.Font = new System.Drawing.Font("Century Schoolbook", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Password.Location = new System.Drawing.Point(206, 226);
+            this.Password.Location = new System.Drawing.Point(275, 278);
+            this.Password.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Password.Name = "Password";
-            this.Password.Size = new System.Drawing.Size(120, 25);
+            this.Password.Size = new System.Drawing.Size(152, 32);
             this.Password.TabIndex = 3;
             this.Password.Text = "Password";
             // 
@@ -72,19 +75,22 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Century Schoolbook", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(203, 39);
+            this.label2.Location = new System.Drawing.Point(271, 48);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(408, 41);
+            this.label2.Size = new System.Drawing.Size(512, 51);
             this.label2.TabIndex = 4;
             this.label2.Text = "Points of Sale System";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // tbPassword
             // 
             this.tbPassword.BackColor = System.Drawing.Color.Teal;
-            this.tbPassword.Location = new System.Drawing.Point(335, 226);
+            this.tbPassword.Location = new System.Drawing.Point(447, 278);
+            this.tbPassword.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tbPassword.Name = "tbPassword";
             this.tbPassword.PasswordChar = '*';
-            this.tbPassword.Size = new System.Drawing.Size(276, 20);
+            this.tbPassword.Size = new System.Drawing.Size(367, 22);
             this.tbPassword.TabIndex = 5;
             // 
             // btnLogin
@@ -93,9 +99,10 @@
             this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btnLogin.Font = new System.Drawing.Font("Century Schoolbook", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogin.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnLogin.Location = new System.Drawing.Point(511, 306);
+            this.btnLogin.Location = new System.Drawing.Point(681, 377);
+            this.btnLogin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(100, 31);
+            this.btnLogin.Size = new System.Drawing.Size(133, 38);
             this.btnLogin.TabIndex = 7;
             this.btnLogin.Text = "Login";
             this.btnLogin.UseVisualStyleBackColor = false;
@@ -103,11 +110,11 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.IndianRed;
             this.BackgroundImage = global::MuroAaron_BSIT2D.Properties.Resources.kame;
-            this.ClientSize = new System.Drawing.Size(795, 447);
+            this.ClientSize = new System.Drawing.Size(1060, 550);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.tbPassword);
             this.Controls.Add(this.label2);
@@ -115,6 +122,7 @@
             this.Controls.Add(this.tbUsername);
             this.Controls.Add(this.Username);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
