@@ -224,6 +224,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::MuroAaron_BSIT2D.Properties.Resources.kame;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(1142, 762);
             this.Controls.Add(this.dtpBirthDate);
             this.Controls.Add(this.label8);
@@ -246,6 +248,7 @@
             this.Controls.Add(this.tbMname);
             this.Controls.Add(this.tbFname);
             this.Name = "frmUsers";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmUsers";
             this.Load += new System.EventHandler(this.frmUsers_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvUsers)).EndInit();
